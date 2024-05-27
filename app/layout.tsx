@@ -25,22 +25,14 @@ export default function RootLayout({
       variables: { colorPrimary: '#624cf5'}
     }}>
 
-      <html lang="en">
+      <html>
         <body>
-          <header>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </header>
-          <main>
             {children}
-          </main>
         </body>
       </html>
-  </ClerkProvider>
+          
+       
+    </ClerkProvider>
 
   );
 }
